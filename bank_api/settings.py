@@ -1,7 +1,3 @@
-MONGO_DBNAME = 'api-python-exam'
-
-RESOURCE_METHODS = ['GET']
-
 bank_schema = {
     'schema':{
         'approvalfy': {
@@ -25,4 +21,10 @@ bank_schema = {
     }
 }
 
-DOMAIN = {'bank': bank_schema}
+DEFAULT_SETTINGS = {
+    'MONGO_DBNAME' : 'api-python-exam',
+    'RESOURCE_METHODS' : ['GET'],
+    'DOMAIN': {
+        'bank': bank_schema
+    }
+}
